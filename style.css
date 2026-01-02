@@ -4,6 +4,7 @@ color:#432A11;
 text-decoration:none;
 font-family:sans-serif;
 font-size:35px;
+border:4px double #F6F65C;
 }
 .one {
 transition:0.4s;
@@ -108,4 +109,7 @@ float:left;
 }
 main span {
 color:#4C702F;
+}
+.video {
+border-radius:50px;
 }
