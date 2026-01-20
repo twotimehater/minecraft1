@@ -24,7 +24,7 @@ left:0px;
 transition:0.4s;
 position:fixed;
 left:-170px;
-top:80px;
+top:85px;
 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdFlpykCWPlfqazky2ZLYi2DgGwJ3be3hPoA&s);
 background-size: cover;
 opacity:0.5;
@@ -68,7 +68,7 @@ top:-30px;
  font-size:25px;
 font-family:monospace;
 text-align:center;
-color:#C7A578;
+color:#655C2D;
 }
 header li:NTH-CHILD(2) {
 color:red;
@@ -84,7 +84,7 @@ list-style:url("https://i.ibb.co/35SvqFct/miner.png");
 .new {
 position:absolute;
 left:165px;
-top:195px;
+top:215px;
 }
 body {
 background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyAuGqlWAv6lieCSd6uMSjr2beAL3FTyJAQ&s");
@@ -93,9 +93,12 @@ main p {
 color:#8AAC6E;
 font-size:25px;
 font-family:monospace;
+animation: textappear 2s 1;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
 }
 footer h3 {
-    border-top: 4px dotted #EBD4B5;
+text-decoration:overline wavy #EBD4B5 3px;
 font-family:monospace;
 color:#C1A37C;
 font-size:35px;
@@ -112,4 +115,41 @@ color:#4C702F;
 }
 .video {
 border-radius:50px;
+}
+.logo {
+position:absolute;
+right:0px;
+width:70px;
+height:70px;
+animation: spin 2.5s infinite;
+}
+@keyframes spin {
+from {
+transform: rotate(0deg)
+}
+to {
+transform: rotate(360deg)
+}
+}
+header div {
+background-image:url(https://i.pinimg.com/474x/e9/1b/80/e91b80ba12191f2d940f8e3f553c6557.jpg);
+position:static;
+animation: background 2s 1;
+}
+@keyframes background {
+0% {
+transform:translateY(-275px);
+}
+}
+main h2 {
+text-decoration:overline #578648 5px;
+}
+@keyframes textappear {
+0% {
+transform:translateX(200px);
+opacity:10%
+}
+100% {
+opacity:100%;
+}
 }
