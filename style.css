@@ -105,10 +105,12 @@ font-size:35px;
 text-align:center;
 }
 footer h2 {
+position:relative;
 font-family:monospace;
 color:#7E5E34;
 font-size:25px;
 float:left;
+animation: TheEnd 2s infinite;
 }
 main span {
 color:#4C702F;
@@ -151,5 +153,24 @@ opacity:10%
 }
 100% {
 opacity:100%;
+}
+}
+.Modrinth {
+color:#32CD64;
+}
+.CurseForge {
+color:#f0523a;
+}
+.ModForge {
+position:relative;
+top:10px;
+width:50px;
+}
+@keyframes TheEnd {
+10% {
+transform:translateY(15px);
+}
+100% {
+transform:translateY(-10px);
 }
 }
