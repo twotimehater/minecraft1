@@ -174,3 +174,16 @@ transform:translateY(15px);
 transform:translateY(-10px);
 }
 }
+.warden {
+position:relative;
+width:75px;
+}
+main a {
+text-align:center;
+text-decoration:none;
+color:#638C8C;
+}
+main a:hover {
+transition:0.5s;
+color:#94B8B8;
+}
