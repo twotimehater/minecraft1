@@ -116,6 +116,9 @@ span {
 color:#66C925;
 }
 .video {
+display:block;
+margin-left:auto;
+margin-right:auto;
 border-radius:50px;
 }
 .logo {
